@@ -72,5 +72,6 @@ public class Solution {
         Result.insertionSort1(n, arr);
 
         bufferedReader.close();
+        
     }
 }
