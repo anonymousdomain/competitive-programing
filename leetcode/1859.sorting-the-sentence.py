@@ -5,6 +5,7 @@
 #
 
 # @lc code=start
+import unittest
 class Solution:
     def sortSentence(self, s: str) -> str:
         words=s.split()
@@ -18,4 +19,14 @@ class Solution:
         return sort.strip()
 # @lc code=end
 
+class TestSortSentence(unittest.TestCase):
 
+    def test_sort(self):
+        
+        res=Solution.sortSentence(self='',s="is2 sentence4 This1 a3")
+        
+        self.assertEqual(res,"This is a sentence")
+
+if __name__=='__main__':
+    unittest.main()
+    
