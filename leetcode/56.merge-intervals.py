@@ -12,4 +12,4 @@ class Solution:
                 merged.append(interval)
                 
         return merged
-        
+         
